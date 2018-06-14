@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+}
+
+/* LAYOUT */
+
+.row {
+  display:flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.padcon {
+  padding-top: 50px;
+  padding-bottom: 50px; 
+}
+
+.hero {
+  height: calc(100vh - 30px);
+}
+
+.flexy {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.x-space {
+  justify-content: space-between;
+}
+
+.btn {
+  margin: 4% auto;
+}
+
+.product {
+  margin-top: 40px;
+}
+
+hr {
+  max-width: 200px;
+  background-color: #242424;
+  height: 2px;
+}
+
+/* TEXT */
+
+.text-center {
+  text-align: center;
+}
+
+.text-pad {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+.section-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+ul>li {
+  font-size: 16px;
+  list-style-image: url(./img/check.png);
+}
+
+.textcol {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#headline {
+  justify-content: center;
+}
+
+.space {
+  margin-bottom: 5px;
+}
+
+h4 {
+  margin-top: 30px;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* COLORS */
+
+.bg-light {
+  background-color: ccc;
+}
+
+#product {
+  background-image: url(./img/bokeh-bg.jpeg);
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+
+/* IMAGES */
+
+.img {
+margin-top: 30px;
+margin-bottom: 30px;
+border-radius: 10px;
+border color: #242424;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.36);
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  margin: 1% auto;
+}
+
+.a-center {
+  align-self: center;
+}
+
+.about-me {
+  border-radius: 50%;
+  border: 2px solid #242424;
+  border-style: dotted;
+}
+
+.feature {
+  max-width: 60px;
+  min-width: 50px;
+  padding: -20px;
+  margin: -20px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.happy {
+  max-height: 380px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+.stressed {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.bonus {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.testimonials {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 1% auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.36), 0 6px 20px 0 rgba(0, 0, 0, 0.36);
+}
+
+/* ACCORDION */
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.panel {
+    padding: 10 18px;
+    margin: 0 auto;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.inner-panel {
+  padding-left: 18px;
+  margin-top: 18px;
+  max-height: 40px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 960px) {
+  ul>li {
+    font-size: 18px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 960px) {
+  ul>li {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 960px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .stressed {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bonus {
+    max-width: 300px;
+  }
+}
